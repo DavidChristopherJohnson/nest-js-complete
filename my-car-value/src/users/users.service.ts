@@ -40,7 +40,7 @@ export class UsersService {
         const user = await this.findOne(id);
 
         if(!user) {
-            throw new NotFoundException(`User with id ${id} not found`);
+            throw new  NotFoundException(`User with id ${id} not found`);
         }
 
         return this.repo.remove(user);

@@ -3,12 +3,24 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "test2@email.com",
+    "email": "test@email.com",
     "password": "aaaa"
 }
 
 ### Find a user with specifc id
-GET http://localhost:3000/auth/1
+GET http://localhost:3000/auth/999
 
 ### Find all users with matching email
-GET http://localhost:3000/auth?email=test2@email.com
+GET http://localhost:3000/auth?email=test@email.com
+
+### Remove user with specified ID
+DELETE http://localhost:3000/auth/3
+
+### Update user
+PATCH http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+    "email": "david@johnson.com",
+    "password": "1234"
+}

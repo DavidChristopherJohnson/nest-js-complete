@@ -3,8 +3,8 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "test@email.com",
-    "password": "aaaa"
+    "email": "test_123@email.com",
+    "password": "aaaa_pwd"
 }
 
 ### Find a user with specifc id
@@ -21,6 +21,6 @@ PATCH http://localhost:3000/auth/1
 Content-Type: application/json
 
 {
-    "email": "david@johnson.com",
-    "password": "1234"
+    "email": "david_99@johnson.com",
+    "password": "1234_pwd"
 }

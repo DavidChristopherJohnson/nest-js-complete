@@ -15,11 +15,6 @@ import { CurrentUser } from 'src/decorators/current-user.decorator';
 @Serialize(UserDto)
 export class UsersController {
     constructor(private usersService: UsersService, private authService: AuthService) { }
-    
-    // @Get('/whoami')
-    // whoAmI(@Session() session:any) {
-    //     return this.usersService.findOne(session.userId);
-    // }
 
     @Get('/whoami')
     whoAmI(@CurrentUser() user:string) {
@@ -45,7 +40,6 @@ export class UsersController {
         return user;
     }
 
-    @Serialize(UserDto)
     @Get('/:id')
     async findUser(@Param('id') id: string) {
         const user = await this.usersService.findOne(parseInt(id));

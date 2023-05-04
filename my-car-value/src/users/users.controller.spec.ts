@@ -83,4 +83,11 @@ describe('UsersController', () => {
       expect(user.id).toEqual(1);
       expect(session.userId).toEqual(1);
   })  
+
+  it('signOut updates session object to have no userId', async () => {
+    const session = {userId: 1}
+    await controller.signOut(session);
+
+    expect(session.userId).toBeNull();
+  })
 });

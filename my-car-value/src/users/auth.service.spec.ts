@@ -68,6 +68,7 @@ describe('AuthService', () => {
         await service.signUp('asdf@here.com', 'asdf');
         const user = await service.signIn('asdf@here.com', 'asdf');
         expect(user).toBeDefined;
+        expect(user.id).toEqual(expect.any(Number));
         expect(user.email).toBe('asdf@here.com');
     })
 })

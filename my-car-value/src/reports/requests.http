@@ -1,0 +1,13 @@
+//Create a car sale
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+    "make": "Ford",
+    "model": "mondeo",
+    "year": 1997,
+    "mileage": 200000,
+    "lng": 0,
+    "lat": 0,
+    "price": 10900.99
+}

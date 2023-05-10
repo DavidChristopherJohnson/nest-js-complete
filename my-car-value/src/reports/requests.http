@@ -4,10 +4,10 @@ content-type: application/json
 
 {
     "make": "Ford",
-    "model": "mondeo",
-    "year": 1997,
-    "mileage": 200000,
+    "model": "Focus",
+    "year": 2022,
+    "mileage": 12000,
     "lng": 0,
     "lat": 0,
-    "price": 10900.99
+    "price": 18000
 }

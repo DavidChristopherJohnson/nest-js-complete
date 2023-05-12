@@ -1,4 +1,4 @@
-import  {IsEmail, IsString, IsNumber, Min, Max, IsLongitude, IsLatitude, min} from "class-validator";
+import  {IsString, IsNumber, Min, Max, IsLongitude, IsLatitude} from "class-validator";
 
 export class CreateReportDto
 {
@@ -18,11 +18,9 @@ export class CreateReportDto
     @Max(999999)
     mileage: number
 
-    @IsNumber()
     @IsLongitude()
     lng: number
     
-    @IsNumber()
     @IsLatitude()
     lat: number
 

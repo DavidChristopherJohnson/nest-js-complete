@@ -3,17 +3,17 @@ POST http://localhost:3000/reports
 content-type: application/json
 
 {
-    "make": "Ford",
-    "model": "Focus",
-    "year": 2022,
-    "mileage": 12000,
-    "lng": 0,
-    "lat": 0,
-    "price": 18000
+    "make": "ford",
+    "model": "mustang",
+    "year": 1982,
+    "mileage": 50000,
+    "lng": 45,
+    "lat": 45,
+    "price": 20000
 }
 
 ### Approve report
-PATCH http://localhost:3000/reports/1
+PATCH http://localhost:3000/reports/10
 content-type: application/json
 
 {
@@ -21,4 +21,4 @@ content-type: application/json
 }
 
 ### Get an esitmate for an existing vehicle
-GET http://localhost:3000/reports?make=ford&model=focus&lng=0&lat=0&year=1980&mileage=20000
+GET http://localhost:3000/reports?make=ford&model=mustang&lng=45&lat=45&year=1981&mileage=20000

@@ -17,10 +17,10 @@ content-type: application/json
 }
 
 ### Find a user with specifc id
-GET http://localhost:3000/auth/2
+GET http://localhost:3000/auth/1
 
 ### Find all users with matching email
-GET http://localhost:3000/auth?email=test@email.com
+GET http://localhost:3000/auth?email=test_127@email.com
 
 ### Remove user with specified ID
 DELETE http://localhost:3000/auth/3
